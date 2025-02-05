@@ -12,13 +12,9 @@ class LeaderboardController extends Controller
         $users = User::with(['quizAttempts.quiz.questions'])->get();
 
         $leaderboard = $users->map(function ($user) {
-            $totalXP = $user->quizAttempts->flatMap(function ($attempt) {
-                return $attempt->quiz->questions;
-            })->sum('xp');
+            $totalXP = $user->xp;
         
-            $totalCorrect = $user->quizAttempts->flatMap(function ($attempt) {
-                return $attempt->quiz->questions;
-            })->count();
+            $totalCorrect = $user->art + $user->geography + $user->history + $user->science + $user->sports;
         
             return (object)[
                 'name' => $user->name,
