@@ -16,7 +16,7 @@
     <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="/placeholder.svg?height=40&width=40" alt="QuizMaster Logo" class="h-10 w-10 mr-3">
+                {{-- <img src="/placeholder.svg?height=40&width=40" alt="QuizMaster Logo" class="h-10 w-10 mr-3"> --}}
                 <span class="font-bold text-xl">QuizMaster</span>
             </div>
             <div>

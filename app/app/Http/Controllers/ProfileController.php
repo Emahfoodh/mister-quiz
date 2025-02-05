@@ -29,7 +29,7 @@ class ProfileController extends Controller
         $categoryCounts = $quizAttempts->flatMap(function ($attempt) {
             return $attempt->quiz->questions->map(fn($question) => strtolower($question->category));
         })->countBy();
-        error_log($categoryCounts);
+        // error_log($categoryCounts);
         // Define supported categories
         $categories = ['art', 'geography', 'history', 'science', 'sports'];
         $stats = [];

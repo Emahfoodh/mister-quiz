@@ -12,7 +12,7 @@
     <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="/placeholder.svg?height=40&width=40" alt="QuizMaster Logo" class="h-10 w-10 mr-3">
+                {{-- <img src="/placeholder.svg?height=40&width=40" alt="QuizMaster Logo" class="h-10 w-10 mr-3"> --}}
                 <span class="font-bold text-xl">QuizMaster</span>
             </div>
             <div>
@@ -38,7 +38,7 @@
                 <h1 class="text-3xl font-bold mb-6 text-gray-800">User Profile</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <img src="/placeholder.svg?height=200&width=200" alt="{{ $user->name }}" class="w-48 h-48 rounded-full mx-auto md:mx-0">
+                        <img src="/placeholder.png?height=200&width=200" alt="{{ $user->name }}" class="w-48 h-48 rounded-full mx-auto md:mx-0">
                     </div>
                     <div>
                         <p class="mb-2"><span class="font-semibold">Username:</span> {{ $user->name }}</p>
